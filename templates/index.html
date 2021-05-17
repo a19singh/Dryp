@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <h2>Calculator</h2>
+        <style>
+        .float-container {
+            padding: 10px;
+        }
+        .float-child {
+            width: 10%;
+            float: left;
+            padding: 15px;
+            
+        } 
+        
+        </style>
+    </head>
+    <body>
+        <form method = 'POST'>
+            <div class="float-container">
+
+                <div class="float-child">
+                  <div class="green">
+                    Operand A
+                    <input type = 'text' name='ValueA'/>
+                </div>
+                </div>
+                
+                <div class="float-child">
+                  <div class="blue">
+                    Operator
+                    <select name="operator">
+                        <option value="addition">Addition</option>
+                        <option value="subtraction">Subtraction</option>
+                        <option value="multiplication">Multiplication</option>
+                        <option value="divison">Divison</option>
+                      </select></div>
+                </div>
+                <div class="float-child">
+                    <div class="blue">
+                        Operand B
+                        <input type = 'text' name='ValueB'/></div>
+                  </div>
+              </div>
+              <br><br><br><br>
+            <div class="float-child">
+                <div class="blue">
+                    <input type="submit" value="Calculate"/></div>
+              </div>
+            
+          </div>
+            
+
+        </form>
+        <br><br>
+        <br><br><br>
+        {% if output != 0 %}
+        Output: {{output}}
+        {% endif %}
+    </body>
+</html>
