@@ -9,6 +9,6 @@ def multiplication(a,b):  #function to return multiplication of two values
 
 def division(a,b):   #function to return Divison of two values
     if b==0:
-        raise ValueError('Divide by zero')  #If denominator happes to be zero then raise the exception 
+        raise ValueError('Divide by zero')  #If denominator happens to be zero then raise the exception 
     return a/b
 
